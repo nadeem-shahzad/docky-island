@@ -3,28 +3,28 @@
     <channel>
         <title>Docky</title>
         <item>
-            <title>1.0.4</title>
-            <pubDate>Tue, 20 Oct 2026 14:12:42 +0500</pubDate>
+            <title>1.0.5</title>
+            <pubDate>Tue, 20 Oct 2026 14:20:35 +0500</pubDate>
             <link>https://docky.online</link>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Docky 1.0.4
+            <description sparkle:format="markdown"><![CDATA[# Docky 1.0.5
 
-- Choose instant, short, relaxed, or deliberate hover opening in Appearance.
-- Click the island header to pin it open; click again or use its close control to collapse. Escape closes it when the island has keyboard focus.
-- The island stays open during file imports, outgoing drags, file selection, and Quick Look.
-- Preview shelf files with the eye button or click their name and press Space. Supported files use native macOS thumbnails.
-- Shelf results remain visible in the shelf even when island alerts are disabled.
-- New Permissions page brings Accessibility, keyboard listening, notification access, and live feature status together with macOS settings shortcuts. Checks do not request access automatically.
-- Settings navigation scrolls to keep every section accessible.
-- Publishing now runs native behavior checks before packaging.
+## New features
+
+- Local clipboard shelf for explicitly saved text, web links, images, and hex colours. Copy saved items back to the clipboard, remove individual items, or clear the shelf.
+- Choose one-hour, 24-hour, seven-day, or manual retention. Expired items are removed while Docky runs or on next launch. Up to 40 items and 30 MB are kept; older items are removed when full. Clipboard content is never polled or uploaded.
+- Quick actions open from the menu bar or Control–Option–Space. Choose Control–Shift–Space if the default combination is unavailable; registration failures appear in settings.
+- Start/pause focus, add files, save clipboard content, toggle meeting mode, launch a chosen favourite app, or run a named macOS Shortcut.
+- Meeting mode pauses keyboard sounds (including previews), automatic hover opening, drag popups, and Docky alerts without changing feature preferences. It ends when disabled or Docky quits. It does not record meetings or silence other applications.
+- Clipboard and Actions tabs in the island and dedicated settings pages. Icon tabs include accessible labels and tooltips.
 
 ## Validation
 
-Native behavior checks cover file pasteboard formats, display placement, and each collapse-blocking interaction. Debug compilation and universal Release packaging are checked before publication. Real Finder dragging, Quick Look keyboard focus, permission changes in System Settings, and lock-screen behavior still need interactive validation on target Macs. No changes to macOS Mission Control gestures are made.
+Debug and universal Release compilation, clipboard classification/expiry/archive round-trip and limits, and existing native shelf/display/interaction checks run before publication. Signing, notarization, and hosted installer verification are performed by publish.sh. Global shortcut conflicts, Shortcuts execution, and the complete clipboard UI still require interactive checks on target Macs. Meeting transcription/notetaking is not part of this release.
 ]]></description>
-            <enclosure url="https://github.com/nadeem-shahzad/docky-island/releases/download/v1.0.4/Docky-1.0.4.dmg" length="3022684" type="application/octet-stream" sparkle:edSignature="DqcMbYMS7ILWFVY2ZWvb5jOFOfSqsS2+cYvYgGWvXXs6f1CiDGK764o5vOgMNpu6xT0Bsm3wrw/MtpC5medZDA=="/>
+            <enclosure url="https://github.com/nadeem-shahzad/docky-island/releases/download/v1.0.5/Docky-1.0.5.dmg" length="3202767" type="application/octet-stream" sparkle:edSignature="tp/RRuXBradRK3hMfopBWBjgcwqzspSN7pvEv+dmcUemE/3InploX00zu6Pyr0cGbeoSBHEJnhol4Z0I/sdUCg=="/>
         </item>
     </channel>
 </rss>
