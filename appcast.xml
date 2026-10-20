@@ -20,23 +20,5 @@ The macOS top-edge Spaces gesture remains unchanged. The new card provides an al
 ]]></description>
             <enclosure url="https://github.com/nadeem-shahzad/docky-island/releases/download/v1.0.3/Docky-1.0.3.dmg" length="2909826" type="application/octet-stream" sparkle:edSignature="i50LZpGcfxR1orGvc0Zj2RMFCpAZ+z+2lKWa9kSGZ6FubTDhK8CLDuViuI0ytEHWz0y589PjN9bWzRv6Gjd/Bg=="/>
         </item>
-        <item>
-            <title>1.0.2</title>
-            <pubDate>Tue, 20 Oct 2026 13:20:32 +0500</pubDate>
-            <link>https://docky.online</link>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Docky 1.0.2
-
-- New Updates tab with manual checks, last-check time, and an automatic-checks preference.
-- Check for Updates action in the menu bar.
-- Sparkle verifies update archives before offering installation and relaunch.
-- Updates use docky.online for the feed and GitHub Releases for downloads.
-
-Install this version manually once to enable future in-app updates. Updates restart Docky, clearing the temporary file shelf and current focus session.
-]]></description>
-            <enclosure url="https://github.com/nadeem-shahzad/docky-island/releases/download/v1.0.3/Docky-1.0.2.dmg" length="2873957" type="application/octet-stream" sparkle:edSignature="0Uxyzrtg1Kqt3btigbAxpstGNcFVHRD1KGDICT/AWY5JZcsn4PA/KlQWA106bbnzMTmGp9O9XVa6xxGy6M0QBw=="/>
-        </item>
     </channel>
 </rss>
