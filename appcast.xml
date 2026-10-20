@@ -3,22 +3,28 @@
     <channel>
         <title>Docky</title>
         <item>
-            <title>1.0.3</title>
-            <pubDate>Tue, 20 Oct 2026 13:57:28 +0500</pubDate>
+            <title>1.0.4</title>
+            <pubDate>Tue, 20 Oct 2026 14:12:42 +0500</pubDate>
             <link>https://docky.online</link>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Docky 1.0.3
+            <description sparkle:format="markdown"><![CDATA[# Docky 1.0.4
 
-- A dedicated file-drop card appears below the menu bar when a file drag begins. Drop onto the card rather than holding a file against the screen's top edge, which macOS uses for Mission Control/Spaces.
-- Native AppKit file-drop handling replaces the island's SwiftUI item-provider receiver.
-- Native and legacy Finder file/folder pasteboards are supported, with duplicate references removed.
-- The drop card disappears after the drag and is disabled while Docky is hidden or the screen is locked.
+- Choose instant, short, relaxed, or deliberate hover opening in Appearance.
+- Click the island header to pin it open; click again or use its close control to collapse. Escape closes it when the island has keyboard focus.
+- The island stays open during file imports, outgoing drags, file selection, and Quick Look.
+- Preview shelf files with the eye button or click their name and press Space. Supported files use native macOS thumbnails.
+- Shelf results remain visible in the shelf even when island alerts are disabled.
+- New Permissions page brings Accessibility, keyboard listening, notification access, and live feature status together with macOS settings shortcuts. Checks do not request access automatically.
+- Settings navigation scrolls to keep every section accessible.
+- Publishing now runs native behavior checks before packaging.
 
-The macOS top-edge Spaces gesture remains unchanged. The new card provides an alternate target away from that edge.
+## Validation
+
+Native behavior checks cover file pasteboard formats, display placement, and each collapse-blocking interaction. Debug compilation and universal Release packaging are checked before publication. Real Finder dragging, Quick Look keyboard focus, permission changes in System Settings, and lock-screen behavior still need interactive validation on target Macs. No changes to macOS Mission Control gestures are made.
 ]]></description>
-            <enclosure url="https://github.com/nadeem-shahzad/docky-island/releases/download/v1.0.3/Docky-1.0.3.dmg" length="2909826" type="application/octet-stream" sparkle:edSignature="i50LZpGcfxR1orGvc0Zj2RMFCpAZ+z+2lKWa9kSGZ6FubTDhK8CLDuViuI0ytEHWz0y589PjN9bWzRv6Gjd/Bg=="/>
+            <enclosure url="https://github.com/nadeem-shahzad/docky-island/releases/download/v1.0.4/Docky-1.0.4.dmg" length="3022684" type="application/octet-stream" sparkle:edSignature="DqcMbYMS7ILWFVY2ZWvb5jOFOfSqsS2+cYvYgGWvXXs6f1CiDGK764o5vOgMNpu6xT0Bsm3wrw/MtpC5medZDA=="/>
         </item>
     </channel>
 </rss>
