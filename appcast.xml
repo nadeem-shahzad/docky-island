@@ -3,28 +3,26 @@
     <channel>
         <title>Docky</title>
         <item>
-            <title>1.0.5</title>
-            <pubDate>Tue, 20 Oct 2026 14:20:35 +0500</pubDate>
+            <title>1.0.6</title>
+            <pubDate>Tue, 20 Oct 2026 14:29:17 +0500</pubDate>
             <link>https://docky.online</link>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Docky 1.0.5
+            <description sparkle:format="markdown"><![CDATA[# Docky 1.0.6
 
-## New features
-
-- Local clipboard shelf for explicitly saved text, web links, images, and hex colours. Copy saved items back to the clipboard, remove individual items, or clear the shelf.
-- Choose one-hour, 24-hour, seven-day, or manual retention. Expired items are removed while Docky runs or on next launch. Up to 40 items and 30 MB are kept; older items are removed when full. Clipboard content is never polled or uploaded.
-- Quick actions open from the menu bar or Control–Option–Space. Choose Control–Shift–Space if the default combination is unavailable; registration failures appear in settings.
-- Start/pause focus, add files, save clipboard content, toggle meeting mode, launch a chosen favourite app, or run a named macOS Shortcut.
-- Meeting mode pauses keyboard sounds (including previews), automatic hover opening, drag popups, and Docky alerts without changing feature preferences. It ends when disabled or Docky quits. It does not record meetings or silence other applications.
-- Clipboard and Actions tabs in the island and dedicated settings pages. Icon tabs include accessible labels and tooltips.
+- Clipboard history now automatically captures supported clipboard changes while Docky is running; no Save clipboard button is needed. Automatic capture is on by default and can be paused in Clipboard settings.
+- A strict maximum of 15 unique entries is applied to new captures and restored history. The oldest item is removed when full; the existing 30 MB total size limit also applies.
+- Click an item to copy it back to the clipboard and move it to the top. Copying the same content from another app also promotes the existing entry without creating a duplicate.
+- Finder file and folder copies retain native file references so they can be copied back into other apps. Original files remain in place.
+- Docky ignores its own clipboard writes and skips clipboard content marked concealed, transient, or automatically generated. Automatic capture pauses while locked or macOS Secure Input is active.
+- Clipboard Quick Action now opens history. The shelf shows its item count out of 15; individual removal, clear-all, and expiry controls remain available.
 
 ## Validation
 
-Debug and universal Release compilation, clipboard classification/expiry/archive round-trip and limits, and existing native shelf/display/interaction checks run before publication. Signing, notarization, and hosted installer verification are performed by publish.sh. Global shortcut conflicts, Shortcuts execution, and the complete clipboard UI still require interactive checks on target Macs. Meeting transcription/notetaking is not part of this release.
+Debug and universal Release builds; isolated native pasteboard checks for text/file round-trips, concealed-content exclusion, own-write tracking, duplicate promotion, restored-history deduplication, expiry, and 15-item eviction; existing shelf, display, and collapse checks. Tests do not inspect the user's general clipboard. Developer ID signing, notarization, and hosted installer byte verification run through publish.sh. Cross-app clipboard monitoring and row clicking still need interactive validation on target Macs.
 ]]></description>
-            <enclosure url="https://github.com/nadeem-shahzad/docky-island/releases/download/v1.0.5/Docky-1.0.5.dmg" length="3202767" type="application/octet-stream" sparkle:edSignature="tp/RRuXBradRK3hMfopBWBjgcwqzspSN7pvEv+dmcUemE/3InploX00zu6Pyr0cGbeoSBHEJnhol4Z0I/sdUCg=="/>
+            <enclosure url="https://github.com/nadeem-shahzad/docky-island/releases/download/v1.0.6/Docky-1.0.6.dmg" length="3220935" type="application/octet-stream" sparkle:edSignature="Hpfrxm9pWuSROWOYB1E44RhYa7zvS+VGN2wjA2rnY04EvDgHWQzEc597eVF1uxY8X4jV/1VjuK+5CIgUMdNADQ=="/>
         </item>
     </channel>
 </rss>
